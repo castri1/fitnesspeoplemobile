@@ -1,0 +1,26 @@
+﻿<div ng-include="'/views/navbar.html'"></div>
+
+<div class="container-fluid product-view">
+
+    <h3>{{product.name}}</h3>
+
+    <div class="row text-center">
+        <img ng-if="product.name" class="img-responsive product-details" ng-src="{{productUrl}}" alt="" />
+    </div>
+
+    <h4><strong>{{product.vendorPrice | currency}}</strong></h4>
+    <p> {{product.shortDescription}}</p>
+
+    <p ng-if="product.name"><strong>Disponibilidad:</strong></p>
+
+    <ul>
+        <li ng-repeat="attribute in product.productAttributes">
+            {{attribute.name}}
+        </li>
+    </ul>
+
+    <p ng-bind-html="product.fullDescription"></p>
+</div>
+
+<footer ng-include="'/views/footer.html'"></footer>
+

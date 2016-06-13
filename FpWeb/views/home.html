@@ -1,0 +1,16 @@
+﻿<div ng-include="'/views/navbar.html'"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-4 text-center prod-row" ng-repeat="item in categoryItems">
+            <div class="category-item">
+                <a href="#/category/{{item.id}}">
+                    <img ng-src="{{item.url}}" alt="" class="img-responsive"/>
+                    <!--<p>{{item.name}}</p>-->
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer ng-include="'/views/footer.html'"></footer>

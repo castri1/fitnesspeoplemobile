@@ -1,0 +1,24 @@
+﻿<div ng-include="'/views/navbar.html'"></div>
+
+<div class="product-list-container">
+
+    <div class="form-group product-search">
+        <input type="text" class="form-control" placeholder="Buscar..." ng-model="searchText">
+    </div>
+
+
+    <div class="row product-container" ng-repeat="product in productList | filter:searchText">
+        <a ng-click="viewProduct(product.id, product.url)">
+            <div class="col-xs-4 product-picture-container">
+                <img class="img-responsive" ng-src="{{product.url}}" alt="" />
+            </div>
+            <div class="col-xs-8">
+                <h4>{{product.name}}</h4>
+                <h5>{{product.vendorPrice | currency}}</h5>
+            </div>
+        </a>
+    </div>
+</div>
+
+<footer ng-include="'/views/footer.html'"></footer>
+

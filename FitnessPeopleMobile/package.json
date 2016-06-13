@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "fp.providers",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-less": "^1.3.0"
+  }
+}

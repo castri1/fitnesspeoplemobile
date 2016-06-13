@@ -5,6 +5,36 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessPeopleMobile", "FitnessPeopleMobile\FitnessPeopleMobile.csproj", "{FAE7B7D4-74C1-4BDB-B01B-F57A9A813455}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FpWeb", "FpWeb\", "{4A2FA2F6-443D-48E2-8DF0-5A1B80CE961F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56857"
+		Debug.AspNetCompiler.PhysicalPath = "FpWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56857\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56857"
+		Release.AspNetCompiler.PhysicalPath = "FpWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56857\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56857"
+		SlnRelativePath = "FpWeb\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{0D9BFA26-5C34-4679-A4EB-AFA0EAF46471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{097F07E3-6C87-41AB-8DFE-3ED67A276A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{FE977EC3-1102-4439-9BFD-FEE27DB9E7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{7A03D789-DED9-4ECF-88A7-F7DD1AB68541}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +45,29 @@ Global
 		{FAE7B7D4-74C1-4BDB-B01B-F57A9A813455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAE7B7D4-74C1-4BDB-B01B-F57A9A813455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAE7B7D4-74C1-4BDB-B01B-F57A9A813455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2FA2F6-443D-48E2-8DF0-5A1B80CE961F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2FA2F6-443D-48E2-8DF0-5A1B80CE961F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2FA2F6-443D-48E2-8DF0-5A1B80CE961F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2FA2F6-443D-48E2-8DF0-5A1B80CE961F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{097F07E3-6C87-41AB-8DFE-3ED67A276A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097F07E3-6C87-41AB-8DFE-3ED67A276A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097F07E3-6C87-41AB-8DFE-3ED67A276A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097F07E3-6C87-41AB-8DFE-3ED67A276A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE977EC3-1102-4439-9BFD-FEE27DB9E7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE977EC3-1102-4439-9BFD-FEE27DB9E7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE977EC3-1102-4439-9BFD-FEE27DB9E7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE977EC3-1102-4439-9BFD-FEE27DB9E7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A03D789-DED9-4ECF-88A7-F7DD1AB68541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A03D789-DED9-4ECF-88A7-F7DD1AB68541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A03D789-DED9-4ECF-88A7-F7DD1AB68541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A03D789-DED9-4ECF-88A7-F7DD1AB68541}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{097F07E3-6C87-41AB-8DFE-3ED67A276A7F} = {0D9BFA26-5C34-4679-A4EB-AFA0EAF46471}
+		{FE977EC3-1102-4439-9BFD-FEE27DB9E7D3} = {0D9BFA26-5C34-4679-A4EB-AFA0EAF46471}
+		{7A03D789-DED9-4ECF-88A7-F7DD1AB68541} = {0D9BFA26-5C34-4679-A4EB-AFA0EAF46471}
 	EndGlobalSection
 EndGlobal
